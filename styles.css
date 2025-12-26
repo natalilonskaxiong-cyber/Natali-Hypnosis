@@ -608,3 +608,27 @@ h1 {
 }
 
 .video-overlay { opacity: 1 !important; }
+
+
+/* Frank 的精准修复：彻底移除蓝色占位框 */
+
+/* 1. 强制隐藏原本那个蓝色的占位层 */
+.hero-video-placeholder, 
+.video-main-wrapper::before, 
+.hero-play-button {
+    display: none !important;
+    background: transparent !important;
+}
+
+/* 2. 确保视频容器是透明的，不再显示蓝色 */
+.video-main-wrapper {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* 3. 让视频标签显示出来，不要被隐藏 */
+video {
+    display: block !important;
+    visibility: visible !important;
+}
