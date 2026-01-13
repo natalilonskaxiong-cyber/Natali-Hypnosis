@@ -612,47 +612,25 @@ h1 {
 
 /* Frank 的精准修复：彻底移除蓝色占位框 */
 
-/* 1. 强制隐藏原本那个蓝色的占位层 */
-.hero-video-placeholder, 
-.video-main-wrapper::before, 
-.hero-play-button {
-    display: none !important;
-    background: transparent !important;
-}
-
-/* 2. 确保视频容器是透明的，不再显示蓝色 */
-.video-main-wrapper {
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-}
-
-/* 3. 让视频标签显示出来，不要被隐藏 */
-video {
-    display: block !important;
-    visibility: visible !important;
-}
-
-/* 视频网格容器样式 */
+/* 统一的16视频网格 */
 .reviews-grid {
     display: grid;
-    /* 核心：自动填充，每个视频最小宽度 280px，电脑上会自动排成 4 列 */
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
-    gap: 20px; /* 视频之间的间距 */
+    gap: 20px; 
     padding: 20px 0;
 }
 
-/* 单个视频项样式 */
 .video-item {
     width: 100%;
-    background: #fff;
+    background: #000;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 .video-item video {
     width: 100%;
     display: block;
+    aspect-ratio: 16 / 9; /* 强制所有视频框大小一致 */
+    object-fit: cover; 
 }
 
