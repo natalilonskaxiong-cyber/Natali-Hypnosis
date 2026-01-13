@@ -632,3 +632,27 @@ video {
     display: block !important;
     visibility: visible !important;
 }
+
+/* 视频网格容器样式 */
+.reviews-grid {
+    display: grid;
+    /* 核心：自动填充，每个视频最小宽度 280px，电脑上会自动排成 4 列 */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 20px; /* 视频之间的间距 */
+    padding: 20px 0;
+}
+
+/* 单个视频项样式 */
+.video-item {
+    width: 100%;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.video-item video {
+    width: 100%;
+    display: block;
+}
+
