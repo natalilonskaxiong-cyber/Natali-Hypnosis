@@ -622,15 +622,15 @@ h1 {
 
 .video-item {
     width: 100%;
-    background: #000;
+    background: transparent; /* 去掉黑色背景 */
     border-radius: 12px;
     overflow: hidden;
 }
 
-.video-item video {
+.video-item iframe {
     width: 100%;
+    /* 针对竖屏视频，将比例改为 9 / 16。如果是横屏则用 16 / 9 */
+    aspect-ratio: 9 / 16; 
     display: block;
-    aspect-ratio: 16 / 9; /* 强制所有视频框大小一致 */
-    object-fit: cover; 
 }
 
