@@ -224,43 +224,35 @@
         </div>
     </section>
 
-<section id="booking-section" style="padding: 60px 20px; background-color: #f4f7f9; border-top: 1px solid #ddd; clear: both;">
-    <div style="max-width: 550px; margin: 0 auto; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1);">
-        <h2 style="text-align: center; color: #222; margin-bottom: 10px; font-size: 26px;">Бесплатная консультация</h2>
-        <p style="text-align: center; color: #666; margin-bottom: 30px;">Заполните форму, и мы свяжемся с вами в WhatsApp.</p>
+
+<section id="booking-section" style="padding: 60px 20px; background-color: #f8fafc; border-top: 1px solid #e2e8f0; clear: both;">
+    <div style="max-width: 500px; margin: 0 auto;">
+        <h2 style="text-align: center; color: #1e293b; margin-bottom: 10px; font-size: 28px; font-weight: 800;">Бесплатная консультация</h2>
+        <p style="text-align: center; color: #64748b; margin-bottom: 30px;">Пожалуйста, укажите ваш город и вопрос, затем выберите время</p>
         
-        <form action="https://formspree.io/f/Ваш единственныйID" method="POST">
+        <form action="https://calendly.com/natalilonskaxiong/30min" method="get" target="_blank">
             <div style="margin-bottom: 15px;">
-                <label style="display: block; margin-bottom: 5px; font-weight: bold;">Ваше имя </label>
-                <input type="text" name="name" required style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px;">
+                <label style="display: block; margin-bottom: 5px; font-weight: bold;">Ваше имя (姓名):</label>
+                <input type="text" name="name" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
             </div>
-
+            
             <div style="margin-bottom: 15px;">
-                <label style="display: block; margin-bottom: 5px; font-weight: bold;">Email</label>
-                <input type="email" name="_replyto" required style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px;">
-            </div>
-
-            <div style="margin-bottom: 15px;">
-                <label style="display: block; margin-bottom: 5px; font-weight: bold;">WhatsApp </label>
-                <input type="tel" name="whatsapp" placeholder="+..." required style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px;">
-            </div>
-
-            <div style="margin-bottom: 15px;">
-                <label style="display: block; margin-bottom: 5px; font-weight: bold;">Страна и город </label>
-                <input type="text" name="location" required style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px;">
+                <label style="display: block; margin-bottom: 5px; font-weight: bold;">Ваша страна и город (国家和城市):</label>
+                <input type="text" name="location" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
             </div>
 
             <div style="margin-bottom: 20px;">
-                <label style="display: block; margin-bottom: 5px; font-weight: bold;">Ваш запрос </label>
-                <textarea name="message" rows="3" placeholder="Кратко опишите ситуацию..." style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px;"></textarea>
+                <label style="display: block; margin-bottom: 5px; font-weight: bold;">Опишите кратко ваш запрос (想谈的问题):</label>
+                <textarea name="a1" rows="4" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;" placeholder="Например: тревога, отношения, самооценка..."></textarea>
             </div>
 
-            <button type="submit" style="width: 100%; background-color: #28a745; color: white; padding: 18px; border: none; border-radius: 8px; font-size: 18px; font-weight: bold; cursor: pointer;">
-                Отправить заявку
+            <button type="submit" style="width: 100%; background-color: #007bff; color: white; padding: 15px; border: none; border-radius: 5px; font-size: 18px; font-weight: bold; cursor: pointer;">
+                Выбрать время в календаре (下一步：选择预约时间)
             </button>
         </form>
     </div>
-    </section>
+</section>
+    
     
     <!-- Yandex.Metrika counter -->
     <noscript>
@@ -273,6 +265,7 @@
     <script src='script.js'></script>
 </body>
 </html>
+
 
 
 
